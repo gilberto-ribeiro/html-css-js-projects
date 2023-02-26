@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write('<br>');
+    }
+
+    function mostra(texto) {
+        document.write(texto);
+        pulaLinha();
+    }
+
+    function calculaIMC(peso, altura) {
+        return peso / (altura * altura);
+    }
+
+    function sorteia() {
+        return Math.round(Math.random() * 100);
+    }
+
+    var numeroSorteado = sorteia();
+    console.log(numeroSorteado);
+    var numeroPensado = parseInt(prompt('Pense em um número'));
+    if (numeroPensado == numeroSorteado) {
+        mostra('Você, acertou!');
+    } else if (numeroPensado > numeroSorteado) {
+        mostra('Você errou, mas o número que você pensou é maior que o número sorteado.');
+    } else {
+        mostra('Você errou, mas o número que você pensou é menor que o número sorteado.');
+    }
+
+</script>
