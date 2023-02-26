@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write('<br>');
+        document.write('<br>');
+        // document.write('<br>');
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var ano = 2023;
+    var idadeGilberto = ano - 1997;
+    var idadeGiovanna = ano - 2003;
+    var idadeAngela = ano - 1974;
+
+    var nomeGilberto = 'Gilberto'
+    
+    mostra('Meu nome é ' + nomeGilberto + ' e tenho ' + idadeGilberto + ' anos.');
+    mostra('Ângela tem ' + idadeAngela + ' anos.');
+    mostra('Giovanna tem ' + idadeGiovanna + ' anos.');
+
+    var mediaDasIadades = (idadeGilberto + idadeGiovanna + idadeAngela) / 3;
+
+    mostra('A média das idades é de ' + Math.round(mediaDasIadades) + ' anos.');
+
+</script>
